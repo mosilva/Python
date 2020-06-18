@@ -1,0 +1,7 @@
+A,B,C = input().split(" ")
+A = int(A)
+B = int(B)
+C = int(C)
+D = ((A+B+abs(A-B))/2)
+E = ((C+D+abs(C-D))/2)
+print("{:.0f} eh o maior".format(E))
