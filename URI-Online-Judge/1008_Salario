@@ -1,0 +1,6 @@
+NUMBER = int(input())
+TIME = int(input())
+HOUR = float(input())
+SALARY = TIME*HOUR
+print ("NUMBER = {}\n
+SALARY = U$ {:.2f}".format(NUMBER,SALARY))
