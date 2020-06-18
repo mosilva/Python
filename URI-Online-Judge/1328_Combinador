@@ -1,0 +1,26 @@
+N = int(input())
+i = 0
+i2 = 0
+p = ""
+while N != i:
+    s1,s2 = input().split() 
+    if len(s1) > len(s2):
+        dif = len(s1) - len(s2)
+        dif = dif * " "
+        s2 = s2 + dif
+    elif len(s2) >  len(s1):
+        dif = len(s2) - len(s1)
+        dif = dif * " "
+        s1 = s1 + dif
+    while len(s1) > i2 or len(s2) > i2:
+        if s1[i2] == " ":
+            p = p + s2[i2]
+        elif s2[i2] == " ":
+            p = p + s1[i2]
+        else:    
+            p = p + s1[i2] + s2[i2]
+        i2 += 1
+    print(p)
+    p = ""
+    i2 = 0
+    i += 1
