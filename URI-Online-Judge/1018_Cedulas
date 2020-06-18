@@ -1,0 +1,18 @@
+x1 = 0
+x =int(input())
+x1 = x
+ncm = x1 // 100.00
+x1 = round(x1 - (ncm*100),2) 
+ncq = x1 // 50.00
+x1 = round(x1 - (ncq*50),2) 
+nvt = x1 // 20.00
+x1 = round(x1 - (nvt*20),2) 
+ndz = x1 // 10.00
+x1 = round(x1 - (ndz*10),2)
+ncn = x1 // 5.00
+x1 = round(x1 - (ncn*5),2) 
+nds = x1 // 2.00
+x1 = round(x1 -(nds*2),2)
+num = x1 // 1.00
+x1 = round((x1 - num),2)
+print("{}\n{:.0f} nota(s) de R$ 100,00\n{:.0f} nota(s) de R$ 50,00\n{:.0f} nota(s) de R$ 20,00\n{:.0f} nota(s) de R$ 10,00\n{:.0f} nota(s) de R$ 5,00\n{:.0f} nota(s) de R$ 2,00\n{:.0f} nota(s) de R$ 1,00".format(x,ncm,ncq,nvt,ndz,ncn,nds,num))
