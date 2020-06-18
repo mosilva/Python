@@ -1,0 +1,16 @@
+x = 60
+y = 90
+min = 1
+xd = 60/ 60
+yd = 90 / 60
+xt = 0 
+yt = 0
+dyx = 0
+dd= int(input())
+while dyx != dd:
+    xt = xd * min
+    yt = yd * min
+    min += 1
+    dyx = yt - xt
+min = min - 1
+print("{} minutos".format(min))
