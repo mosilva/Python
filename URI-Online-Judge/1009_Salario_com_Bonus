@@ -1,0 +1,6 @@
+strNAME = input()
+SALFIXO = float(input())
+VENDAS = float(input())
+SALVEND = VENDAS*0.15
+SALTOT = SALFIXO + SALVEND
+print("TOTAL = R$ {:.2f}".format(SALTOT))
