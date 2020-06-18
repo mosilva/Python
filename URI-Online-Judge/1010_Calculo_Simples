@@ -1,0 +1,12 @@
+COD1,NUM1,VAL1 = input().split(" ")
+COD1 = int((COD1))
+NUM1 = int((NUM1))
+VAL1 = float((VAL1))
+TOT1 = NUM1 * VAL1
+COD2,NUM2,VAL2 = input().split(" ")
+COD2 = int((COD2))
+NUM2 = int((NUM2))
+VAL2 = float((VAL2))
+TOT2 = NUM2 * VAL2
+TOTAL = TOT1 + TOT2
+print("VALOR A PAGAR: R$ {:.2f}".format(TOTAL))
